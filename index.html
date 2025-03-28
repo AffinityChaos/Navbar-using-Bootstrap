@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>Responsive Navbar Using Bootstrap</title>
+        <!-- fontawesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- bootstrap cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .ml-auto{
+                margin-left:auto;
+            }
+            nav{
+                padding:8px 0;
+                box-shadow:0 0 8px #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <i class="fa-solid fa-bars"></i> {HTML ENTITY FOR Bars: &#9776;} -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="" class="navbar-brand"><img src="logo.png" alt="" width="120"></a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" 
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa-solid fa-bars"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="" class="nav-link active">HOME</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">ABOUT US</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">SERVICE</a></li>
+                        <li class="nav-item dropdown" >
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">PRICING</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Basic Plan</a></li>
+                                <li><a class="dropdown-item" href="#">Premium Plan</a></li>
+                                <li><a class="dropdown-item" href="#">Enterprise Plan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="" class="nav-link">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+</html>
